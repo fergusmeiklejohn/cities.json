@@ -36,10 +36,9 @@ readline
       // timezone          : the iana timezone id (see file timeZone.txt) varchar(40)
       // modification date : date of last modification in yyyy-MM-dd format
       cities.push({
-        country: city[8],
         name: city[1].replace('"', '').replace('"', ''),
-        lat: city[4],
-        lng: city[5],
+        country: city[8],
+        timezone: city[17],
       });
     }
     i++;

@@ -37,8 +37,9 @@ readline
       // modification date : date of last modification in yyyy-MM-dd format
       cities.push({
         name: city[1].replace('"', '').replace('"', ''),
-        country: city[8],
+        country_code: city[8],
         timezone: city[17],
+        population: city[14],
       });
     }
     i++;
